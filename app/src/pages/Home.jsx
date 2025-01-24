@@ -61,7 +61,7 @@ const Home = () => {
 							count >= 30 ? "bg-gray-500" : "bg-blue-500"
 						} text-white rounded-lg shadow-md font-semibold hover:${
 							count >= 30 ? "bg-gray-500" : "bg-blue-600"
-						} focus:outline-none focus:ring-2 focus:ring-${
+						} focus:outline-hidden focus:ring-2 focus:ring-${
 							count >= 30 ? "gray" : "blue"
 						}-300 transition-all`}
 						disabled={count >= 30}
@@ -70,7 +70,7 @@ const Home = () => {
 					</button>
 					<button
 						onClick={reset}
-						className="mt-4 px-3 py-3 bg-green-500 text-white rounded-lg shadow-md font-semibold hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300 transition-all"
+						className="mt-4 px-3 py-3 bg-green-500 text-white rounded-lg shadow-md font-semibold hover:bg-green-600 focus:outline-hidden focus:ring-2 focus:ring-green-300 transition-all"
 					>
 						Reset
 					</button>
@@ -79,7 +79,7 @@ const Home = () => {
 				{/* Button to go to page2 */}
 				<button
 					onClick={goToPage2}
-					className="mt-4 px-4 py-3 bg-purple-500 text-white text-2xl rounded-lg shadow-md font-bold hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-300 transition-all"
+					className="mt-4 px-4 py-3 bg-purple-500 text-white text-2xl rounded-lg shadow-md font-bold hover:bg-purple-600 focus:outline-hidden focus:ring-2 focus:ring-purple-300 transition-all"
 				>
 					Go To Page 2
 				</button>
@@ -87,7 +87,7 @@ const Home = () => {
 				{/* Button to go to page3 */}
 				<button
 					onClick={goToPage3}
-					className="mt-4 px-4 py-3 bg-orange-500 text-white text-2xl rounded-lg shadow-md font-bold hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-300 transition-all"
+					className="mt-4 px-4 py-3 bg-orange-500 text-white text-2xl rounded-lg shadow-md font-bold hover:bg-orange-600 focus:outline-hidden focus:ring-2 focus:ring-orange-300 transition-all"
 				>
 					Go To Page 3
 				</button>

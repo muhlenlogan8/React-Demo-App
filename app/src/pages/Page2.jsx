@@ -38,7 +38,7 @@ const Page2 = () => {
 					placeholder="Type something..."
 					value={inputValue}
 					onChange={handleInputChange}
-					className="mt-6 px-4 py-2 rounded-md border border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all"
+					className="mt-6 px-4 py-2 rounded-md border border-gray-400 focus:outline-hidden focus:ring-2 focus:ring-blue-400 transition-all"
 				/>
 				<p className="mt-4 text-lg font-semibold">
 					{userTyped ? "You Typed: " + inputValue : "Type Something Above"}
@@ -47,7 +47,7 @@ const Page2 = () => {
 				{/* Navigation Button */}
 				<button
 					onClick={goToHome}
-					className="mt-8 px-6 py-6 bg-red-500 text-white text-2xl rounded-lg shadow-md font-bold hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300 transition-all"
+					className="mt-8 px-6 py-6 bg-red-500 text-white text-2xl rounded-lg shadow-md font-bold hover:bg-red-600 focus:outline-hidden focus:ring-2 focus:ring-red-300 transition-all"
 				>
 					Go Back to Home
 				</button>
