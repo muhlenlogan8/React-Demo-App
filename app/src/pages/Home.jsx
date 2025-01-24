@@ -45,7 +45,7 @@ const Home = () => {
 
 	return (
 		<>
-			<div className="flex flex-col items-center justify-center h-screen w-screen bg-gray-200">
+			<div className="flex flex-col items-center justify-center h-screen w-screen bg-gray-100">
 				{/* Display the message and count */}
 				<div className="text-center">
 					<h1 className="text-4xl font-extrabold">Play With The Counter</h1>
@@ -58,10 +58,8 @@ const Home = () => {
 					<button
 						onClick={increment}
 						className={`mt-4 px-3 py-3 ${
-							count >= 30 ? "bg-gray-500" : "bg-blue-500"
-						} text-white rounded-lg shadow-md font-semibold hover:${
-							count >= 30 ? "bg-gray-500" : "bg-blue-600"
-						} focus:outline-hidden focus:ring-2 focus:ring-${
+							count >= 30 ? "bg-gray-500" : "bg-blue-500 hover:bg-blue-600"
+						} text-white rounded-lg shadow-md font-semibold focus:outline-hidden focus:ring-2 focus:ring-${
 							count >= 30 ? "gray" : "blue"
 						}-300 transition-all`}
 						disabled={count >= 30}

@@ -5,20 +5,22 @@
   --color-n-2: #3e8ede;
 }
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
+  :root {
+    /* RGB and OKLCH examples for orange */
+    --rgb-orange: rgb(255, 165, 0);
+    /* Standard orange in RGB */
+    --oklch-orange: oklch(79.27% 0.1709 70.67);
+    /* Perceptually similar orange in OKLCH */
+  }
+}
+
+@layer utilities {
+  .bg-rgb-orange {
+    background-color: var(--rgb-orange);
+  }
+
+  .bg-oklch-orange {
+    background-color: var(--oklch-orange);
   }
 }
