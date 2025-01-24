@@ -21,6 +21,11 @@ const Home = () => {
 		navigate("/Page2", { state: { count } });
 	};
 
+	// Function to go to page3
+	const goToPage3 = () => {
+		navigate("/Page3");
+	};
+
 	// Function to change message based on count
 	useEffect(() => {
 		if (count === 0) {
@@ -77,6 +82,14 @@ const Home = () => {
 					className="mt-4 px-4 py-3 bg-purple-500 text-white text-2xl rounded-lg shadow-md font-bold hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-300 transition-all"
 				>
 					Go To Page 2
+				</button>
+
+				{/* Button to go to page3 */}
+				<button
+					onClick={goToPage3}
+					className="mt-4 px-4 py-3 bg-orange-500 text-white text-2xl rounded-lg shadow-md font-bold hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-300 transition-all"
+				>
+					Go To Page 3
 				</button>
 			</div>
 		</>
